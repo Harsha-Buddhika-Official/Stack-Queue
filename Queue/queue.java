@@ -41,4 +41,15 @@ public class queue{
             return false;
         }
     }
+    public void display(){
+        if(!isEmpty()){
+            System.out.println("Queue: ");
+            for(int i=front+1; i<=rear; i++){
+                System.out.print(myqueue[i] + " ");
+            }
+            System.out.println();
+        } else {
+            System.out.println("Queue is empty");
+        }
+    }
 }
